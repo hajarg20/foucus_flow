@@ -1,0 +1,45 @@
+name: foucus_flow
+description: "A new Flutter project"
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.14.4
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  fonts:
+    - family: "plus jakarta sans"
+      fonts:
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 400
+
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 500
+
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+
+        - asset: assets/fonts/Poppins-Light.ttf
+          weight: 300
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_icon2.png"
