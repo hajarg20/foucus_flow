@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foucus_flow/core/helper/on_generate_routes.dart';
 import 'package:foucus_flow/features/splash/presentation/views/splash_view.dart';
 
 void main() {
@@ -10,6 +11,10 @@ class FocusFlow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: SplashView());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      onGenerateRoute: onGenerateRoute,
+      initialRoute: SplashView.routeName,
+    );
   }
 }
