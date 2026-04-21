@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:foucus_flow/core/helper/on_generate_routes.dart';
+import 'package:foucus_flow/core/utils/app_colors.dart';
 import 'package:foucus_flow/features/splash/presentation/views/splash_view.dart';
 
 void main() {
@@ -13,6 +14,14 @@ class FocusFlow extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        fontFamily: 'Plus Jakarta Sans',
+        scaffoldBackgroundColor: AppColors.primaryColor,
+        colorScheme: ColorScheme.dark(
+          primary: AppColors.primaryColor,
+          surface: AppColors.primaryColor,
+        ),
+      ),
       onGenerateRoute: onGenerateRoute,
       initialRoute: SplashView.routeName,
     );

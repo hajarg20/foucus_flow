@@ -5,6 +5,7 @@ Route<dynamic> onGenerateRoute(RouteSettings settings) {
   switch (settings.name) {
     case SplashView.routeName:
       return MaterialPageRoute(builder: (_) => const SplashView());
+
     default:
       return MaterialPageRoute(
         builder: (_) =>
