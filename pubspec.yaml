@@ -28,8 +28,6 @@ flutter:
 
   assets:
     - assets/images/
-    - assets/fonts/
-
 
   fonts:
     - family: "plus jakarta sans"

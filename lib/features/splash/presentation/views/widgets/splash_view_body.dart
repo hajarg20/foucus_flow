@@ -1,10 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+
 import 'package:foucus_flow/core/utils/app_colors.dart';
 import 'package:foucus_flow/core/utils/app_images.dart';
+import 'package:foucus_flow/features/onboarding/presentation/views/onboarding_view.dart';
 
-class SplashViewBody extends StatelessWidget {
+class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
+
+  @override
+  State<SplashViewBody> createState() => _SplashViewBodyState();
+}
+
+class _SplashViewBodyState extends State<SplashViewBody> {
+  @override
+  void initState() {
+    super.initState();
+    _executeNavigation();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -14,8 +26,7 @@ class SplashViewBody extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SvgPicture.asset(Assets.imagesAppIcon1),
-
+            Image.asset(Assets.imagesAppIcon2, width: 150, height: 150),
             const Text(
               'FocusFlow',
               style: TextStyle(
@@ -33,5 +44,13 @@ class SplashViewBody extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  void _executeNavigation() {
+    Future.delayed(const Duration(seconds: 3), () {
+      if (mounted) {
+        Navigator.pushReplacementNamed(context, OnboardingView.routeName);
+      }
+    });
   }
 }
