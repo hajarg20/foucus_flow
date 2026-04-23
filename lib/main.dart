@@ -4,6 +4,7 @@ import 'package:foucus_flow/core/utils/app_colors.dart';
 import 'package:foucus_flow/features/splash/presentation/views/splash_view.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const FocusFlow());
 }
 

@@ -10,11 +10,13 @@ class OnboardingViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return PageView(
       children: const [
-        PageViewItem(title: ' Know when you focus best',
-         subTitle:'''Track your study sessions and find your
+        PageViewItem(
+          title: ' Know when you focus best',
+          subTitle: '''Track your study sessions and find your
   peak hours to optimize your deep work.''',
-          image:Assets.imagesOnBoarding2), 
-    ]
-  );
+          image: Assets.bear,
+        ),
+      ],
+    );
   }
 }

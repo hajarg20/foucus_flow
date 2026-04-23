@@ -26,7 +26,7 @@ class _SplashViewBodyState extends State<SplashViewBody> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(Assets.imagesAppIcon2, width: 150, height: 150),
+            Image.asset(Assets.imagesAppIcon, width: 150, height: 150),
             const Text(
               'FocusFlow',
               style: TextStyle(
